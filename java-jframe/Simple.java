@@ -22,4 +22,4 @@ public class JFrameExample
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);  
         frame.setVisible(true);  
     }  
-}
+}  
