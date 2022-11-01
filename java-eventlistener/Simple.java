@@ -8,25 +8,41 @@ public class JFrameExample
     {  
         JFrame frame = new JFrame("JFrame Example");  
         JPanel panel = new JPanel();  
-        panel.setLayout(new FlowLayout());  
+        panel.setLayout(new FlowLayout());
+        
         JLabel label = new JLabel("JFrame By Example");  
-        JButton button = new JButton();  
-        button.setText("Button");  
+
+        JButton button_1 = new JButton();  
+        button_1.setText("Ok");  
+
+        JButton button_2 = new JButton();  
+        button_2.setText("Cancel");  
+
         panel.add(label);  
-        panel.add(button);  
+        panel.add(button_1);  
+        panel.add(button_2);  
+
         frame.add(panel);  
-        frame.setSize(200, 300);  
+        frame.setSize(300, 80);  
         frame.setLocationRelativeTo(null);  
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);  
         frame.setVisible(true);  
 
-
-        button.addActionListener(new ActionListener()
+        button_1.addActionListener(new ActionListener()
         {
             @Override
             public void actionPerformed(ActionEvent e)
             {
-                System.out.println("Hello World!");
+                System.out.println("Ok has been clicked.");
+            }
+        }); 
+
+        button_2.addActionListener(new ActionListener()
+        {
+            @Override
+            public void actionPerformed(ActionEvent e)
+            {
+                System.out.println("Cancel has been clicked.");
             }
         }); 
     }
