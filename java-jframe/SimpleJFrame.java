@@ -4,7 +4,7 @@ import javax.swing.JFrame;
 import javax.swing.JLabel;  
 import javax.swing.JPanel; 
 
-public class JFrameExample
+public class SimpleJFrame
 {  
     public static void main(String s[])
     {  

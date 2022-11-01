@@ -2,7 +2,7 @@ import java.awt.*;
 import java.awt.event.*;
 import javax.swing.*;    
 
-public class JFrameExample
+public class SimpleEvent
 {  
     public static void main(String s[])
     {  
@@ -18,12 +18,12 @@ public class JFrameExample
         JButton button_2 = new JButton();  
         button_2.setText("Cancel");  
 
-        panel.add(label);  
+        panel.add(label); 
         panel.add(button_1);  
         panel.add(button_2);  
-
+       
         frame.add(panel);  
-        frame.setSize(300, 80);  
+        frame.setSize(400, 80);  
         frame.setLocationRelativeTo(null);  
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);  
         frame.setVisible(true);  
@@ -44,6 +44,6 @@ public class JFrameExample
             {
                 System.out.println("Cancel has been clicked.");
             }
-        }); 
+        });
     }
 }  
